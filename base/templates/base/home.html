@@ -1,0 +1,136 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div id="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card card-pop" id="profile-wrapper">
+                <img id="profile-pic" src="{% static './css/images/download.jpeg' %}" alt="My image">
+                <br>
+                <h3>I'm Rachael</h3>
+                <h4>I love coding,collaboration and learning new things </h4>
+            </div>
+
+        </div>
+        <div class="col-md-9">
+            <div class="card card-pop" id="profile-wrapper">
+                <img id="profile-pic" src="{% static './css/images/dew.jpeg' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card card-pop"></div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card card-pop"></div>
+    </div>
+</div>
+<hr>
+
+<!--================== About Section ===============================-->
+<h1>About Me</h1>
+<div class="row">
+    <div class="column">
+        <img src="{% static './css/images/birds.jpg' %}" id="img">
+        <div class="pic-content">
+            <p>I love nature and being natural is my passion
+                <br>
+                Learning new skills is my love and passion
+                <br>
+                Being unique comes naturally from the inside
+                <br>
+                Being happy all the time and i love codingbr
+                <br>
+                Accomplish a started goal
+            </p>
+        </div>
+
+    </div>
+    <div class="column">
+        <img src="{% static './css/images/way.jpg' %}" id="img">
+        <div class="wrapper">
+            <h1>Nature in a way formate</h1>
+            <p>Makes a beautiful scenery for walking,making nice breathe taking during a walk or a stay in a
+                place and create more interest to a person to keep touring and experience more nature of
+                different catergories</p>
+
+        </div>
+
+    </div>
+    <div class="column">
+        <img src="{% static './css/images/house.jpg' %}" id="img">
+        <div class="wrapper">
+            <p>Housing nature beings out everything to grow naturally as shown in the picture</p>
+        </div>
+    </div>
+</div>
+
+
+<hr>
+
+
+<!--==================Services Section ===============================-->
+
+<div>
+    <h1>Our services</h1>
+    <p>Show casing some picture of nature</p>
+    <div class="services-img">
+        <img src="{% static './css/images/blossom.jpg' %}">
+        <img src="{% static './css/images/blue.jpg' %}">
+        <!-- <img src="{% static './css/images/branch.jpg' %}" > -->
+        <img src="{% static './css/images/contour.jpg' %}">
+        <img src="{% static './css/images/download.jpeg' %}">
+        <img src="{% static './css/images/download.jpg' %}">
+        <img src="{% static './css/images/flower.jpg' %}">
+        <img src="{% static './css/images/green.jpg' %}">
+        <img src="{% static './css/images/house.jpg' %}">
+        <img src="{% static './css/images/howdy.jpeg' %}">
+        <img src="{% static './css/images/landscape.jpg' %}">
+        <img src="{% static './css/images/mixture.jpg' %}">
+        <img src="{% static './css/images/twigs.jpg' %}">
+        <img src="{% static './css/images/nature.jpg' %}">
+        <img src="{% static './css/images/stoney.jpg' %}">
+        <img src="{% static './css/images/were.jpg' %}">
+        <img src="{% static './css/images/shadow.jpg' %}">
+        <img src="{% static './css/images/way.jpg' %}">
+        <img src="{% static './css/images/blue.jpg' %}">
+        <img src="{% static './css/images/green.jpg' %}">
+        <img src="{% static './css/images/tree.jpg' %}">
+    </div>
+</div>
+<hr>
+
+<!--================== Contact Section ===============================-->
+
+<div class="contact-title">
+    <h1>Say Hello</h1>
+    <h2>We are ready to serve you</h2>
+
+</div>
+<div class="contact-form">
+    <form id="contact-form" method="post" action="">
+        <input type="text" name="name" class="form-control" placeholder="Your name" required>
+
+        <input type="email" name="email" class="form-control" placeholder="Email" required>
+
+        <textarea name="message" class="form-control" placeholder="message" rows="4" required></textarea>
+
+        <input type="submit" class="form-control submit" value="SEND MESSAGE">
+
+
+    </form>
+</div>
+
+<div class="footer">
+    <p>Nature Design, Copyright &copy;2021</p>
+</div>
+
+
+{% endblock content %}

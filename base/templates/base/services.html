@@ -1,0 +1,43 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+<div>
+    <h1>Our services</h1>
+    <p>Show casing some picture of nature</p>
+    <div class="services-img">
+        <div class="cropy">
+        <img src="{% static './css/images/blossom.jpg' %}" >
+        <img src="{% static './css/images/blue.jpg' %}" >
+        <!-- <img src="{% static './css/images/branch.jpg' %}" > -->
+        <img src="{% static './css/images/contour.jpg' %}" >
+        <img src="{% static './css/images/download.jpeg' %}" >
+        <img src="{% static './css/images/download.jpg' %}" >
+        <img src="{% static './css/images/flower.jpg' %}" >
+        <img src="{% static './css/images/green.jpg' %}" >
+        <img src="{% static './css/images/house.jpg' %}" >
+        <img src="{% static './css/images/howdy.jpeg' %}" >
+        <img src="{% static './css/images/landscape.jpg' %}" >
+        <img src="{% static './css/images/mixture.jpg' %}" >
+        <img src="{% static './css/images/twigs.jpg' %}" >
+        <img src="{% static './css/images/nature.jpg' %}" >
+        <img src="{% static './css/images/stoney.jpg' %}" >
+        <img src="{% static './css/images/were.jpg' %}" >
+        <img src="{% static './css/images/shadow.jpg' %}" >
+        <img src="{% static './css/images/way.jpg' %}" >
+        <img src="{% static './css/images/blue.jpg' %}" >
+        <img src="{% static './css/images/green.jpg' %}" >
+        <img src="{% static './css/images/tree.jpg' %}" >
+    </div>
+    </div>
+
+
+</div>
+<script src="https://code.jquery.com.jquery-3.6.0.min.js"></script>
+<script src="jquery.flipster"></script>
+<script>
+    $('.cropy').flipster();
+</script>
+
+
+{% endblock content %}

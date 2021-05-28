@@ -1,0 +1,289 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+    height: 100vh;
+    line-height: 1.5;
+    background-position: fixed;
+}
+
+h1 {
+  color: rgb(10, 5, 5);
+  text-align: center;
+  padding: 50px;
+}
+.header {
+  background-color: black;
+  margin-top: 25px;
+  padding: 15px;
+}
+#img {
+  border-radius: 50%;
+}
+
+#profile-wrapper {
+  text-align: center;
+}
+#profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.container {
+  display: grid;
+  /* background: rgb(22, 43, 9); */
+}
+p {
+  color: white;
+}
+.col-md-9{
+    padding-top: 45px;
+}
+.column {
+  /* float: left; */
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+h3 {
+  color: rgb(8, 7, 7);
+}
+h4 {
+  color: rgb(5, 4, 4);
+}
+span {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+div {
+  text-decoration: none;
+}
+.pictures {
+  display: table-column;
+}
+
+
+.pic context {
+  padding: 30px;
+}
+.logo img {
+  padding: 0px;
+  width: 90px;
+
+  height: 45px;
+  margin: auto;
+}
+
+
+
+/* ===============================  Services   ====================================== */
+.services-img  {
+ 
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    overflow: hidden;
+}
+
+.services-img .cropy{
+    width: 300px;
+    margin: 100px auto 0;
+    overflow: visible;
+}
+nav span a {
+  justify-content: space-around;
+  padding: 15px;
+  color: white;
+  float: top 1px;
+}
+
+#nav {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  color: blanchedalmond;
+}
+
+.post-wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: 45px;
+  width: 50%;
+}
+
+
+.about {
+  background-image: url(/static/css/images/onetouch.jpg);
+}
+.text-center {
+  text-align: center;
+  padding: 50px;
+}
+
+/*========================== Footer  ==================================  */
+.footer {
+  margin-top: 165px;
+  padding-left: 600px;
+  background-color: black;
+  height: 100px;
+  width: 1300px;
+  color: white;
+}
+/* .footer p{
+  margin-bottom: 5px;
+} */
+
+/*============================== contact ============================*/
+.contact-title {
+  margin-top: 100px;
+  color: rgb(247, 242, 242);
+  text-transform: uppercase;
+  transition: all 4s ease-in-out;
+  /* color: rgb(10, 5, 5); */
+  text-align: center;
+  padding: 50px;
+  background: rgb(29, 51, 7);
+}
+.contact-title h1 {
+  font-size: 32px;
+  color: #fff;
+  line-height: 10px;
+}
+.contact-titleh2 {
+  font-size: 16px;
+  margin-left: 50px;
+}
+
+form {
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+
+#contact-form{
+  text-align: center;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 18px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 16px;
+  background: rgb(29, 51, 7);
+}
+/* input .form-control{
+  width: 800px;
+  margin: 200px;
+} */
+/* textarea.form-control{
+  width: 800px;
+  margin: 200px;
+} */
+
+form-.submit {
+  background: #ff5722;
+  border-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: blod;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+form-.submit:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+.contact-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: auto;
+  margin: 300px;
+  background-color: darkgray;
+  padding-top: 60px;
+  margin-top: 50px
+  
+}
+input[type=text],[type=email],[type=submit],textarea#styled{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(116, 30, 30);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+textarea.form-control{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(116, 30, 30);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=text],[type=email]{
+  /* width: 600px; */
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(116, 30, 30);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit]{
+  background: rgb(29, 51, 7);
+  color: rgb(116, 112, 112);
+  /* padding: 12px 29px;
+  border: none; */
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+  padding: 12px;
+  border: 1px solid rgb(116, 30, 30);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input.form-control.submit{
+  padding-right: 5px;
+}
+input[type=submit]:hover{
+  background-color: #45a049;
+}
