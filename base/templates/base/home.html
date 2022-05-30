@@ -2,123 +2,193 @@
 {% load static %}
 
 {% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <div id="container"> -->
+<section class="home-intro">
+    <img src="{% static './css/images/home.jpg' %}" width="1450" height="800">
+    <p>We intend to take people all over the world to see the beauty of different nature
+        appearances and to find out the seceret hidden inside nature</p>
 
-<div id="container">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="card card-pop" id="profile-wrapper">
-                <img id="profile-pic" src="{% static './css/images/download.jpeg' %}" alt="My image">
-                <br>
-                <h3>I'm Rachael</h3>
-                <h4>I love coding,collaboration and learning new things </h4>
-            </div>
-
-        </div>
-        <div class="col-md-9">
-            <div class="card card-pop" id="profile-wrapper">
-                <img id="profile-pic" src="{% static './css/images/dew.jpeg' %}" alt="">
-            </div>
-        </div>
-    </div>
-    <br>
-
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card card-pop"></div>
-        </div>
-    </div>
-
-    <div class="col-md-6">
-        <div class="card card-pop"></div>
-    </div>
-</div>
-<hr>
+</section>
 
 <!--================== About Section ===============================-->
-<h1>About Me</h1>
-<div class="row">
-    <div class="column">
-        <img src="{% static './css/images/birds.jpg' %}" id="img">
-        <div class="pic-content">
-            <p>I love nature and being natural is my passion
-                <br>
-                Learning new skills is my love and passion
-                <br>
-                Being unique comes naturally from the inside
-                <br>
-                Being happy all the time and i love codingbr
-                <br>
-                Accomplish a started goal
-            </p>
-        </div>
+<div class="about-section">
+    <h1>About Us Page</h>
 
-    </div>
-    <div class="column">
-        <img src="{% static './css/images/way.jpg' %}" id="img">
-        <div class="wrapper">
-            <h1>Nature in a way formate</h1>
-            <p>Makes a beautiful scenery for walking,making nice breathe taking during a walk or a stay in a
-                place and create more interest to a person to keep touring and experience more nature of
-                different catergories</p>
+</div>
 
-        </div>
-
-    </div>
+<div class="row" style="background-color: rgb(8, 14, 8);">
     <div class="column">
-        <img src="{% static './css/images/house.jpg' %}" id="img">
-        <div class="wrapper">
-            <p>Housing nature beings out everything to grow naturally as shown in the picture</p>
-        </div>
+        <img src="{% static './css/images/squirrel.jpg' %}" alt="squirrel">
     </div>
+    <div class="column">We intend to take people all over the world to see the beauty of different nature
+        appearances and to find out the seceret hidden inside nature</div>
+    <ul>
+        <li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+        <li><a href="https://github.com/rachael-amuge" class="fa fa-github"></a></li>
+        <li><a href="https://t.me/Rachael" class="fa fa-telegram"></a></li>
+
+    </ul>
 </div>
 
 
-<hr>
+
 
 
 <!--==================Services Section ===============================-->
 
-<div>
-    <h1>Our services</h1>
-    <p>Show casing some picture of nature</p>
-    <div class="services-img">
-        <img src="{% static './css/images/blossom.jpg' %}">
-        <img src="{% static './css/images/blue.jpg' %}">
-        <!-- <img src="{% static './css/images/branch.jpg' %}" > -->
-        <img src="{% static './css/images/contour.jpg' %}">
-        <img src="{% static './css/images/download.jpeg' %}">
-        <img src="{% static './css/images/download.jpg' %}">
-        <img src="{% static './css/images/flower.jpg' %}">
-        <img src="{% static './css/images/green.jpg' %}">
-        <img src="{% static './css/images/house.jpg' %}">
-        <img src="{% static './css/images/howdy.jpeg' %}">
-        <img src="{% static './css/images/landscape.jpg' %}">
-        <img src="{% static './css/images/mixture.jpg' %}">
-        <img src="{% static './css/images/twigs.jpg' %}">
-        <img src="{% static './css/images/nature.jpg' %}">
-        <img src="{% static './css/images/stoney.jpg' %}">
-        <img src="{% static './css/images/were.jpg' %}">
-        <img src="{% static './css/images/shadow.jpg' %}">
-        <img src="{% static './css/images/way.jpg' %}">
-        <img src="{% static './css/images/blue.jpg' %}">
-        <img src="{% static './css/images/green.jpg' %}">
-        <img src="{% static './css/images/tree.jpg' %}">
+<h1>Our services</h1>
+<p>Show casing some picture of nature</p>
+<div class="row">
+    <div class="col-3">
+        <img src="{% static './css/images/birds.jpeg' %}">
+    </div>
+
+    <div class="col-3">
+        <img src="{% static './css/images/bugagali.jpeg' %}">
+    </div>
+
+    <div class="col-3">
+        <img src="{% static './css/images/yes.jpeg' %}">
+    </div>
+
+    <div class="col-3">
+        <img src="{% static './css/images/boat curise.jpeg' %}">
     </div>
 </div>
-<hr>
+
+<div class="row">
+    <div class="col-3">
+        <img src="{% static './css/images/crested.jpeg' %}">
+    </div>
+
+    <div class="col-3">
+        <img src="{% static './css/images/bwindi.jpeg' %}">
+    </div>
+
+    <div class="col-3">
+        <img src="{% static './css/images/drive.jpeg' %}">
+    </div>
+
+    <div class="col-3">
+        <img src="{% static './css/images/elepahants.jpeg' %}">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        <img src="{% static './css/images/equtor.jpeg' %}">
+    </div>
+
+    <div class="col-3">
+        <img src="{% static './css/images/gorilla trek.jpeg' %}">
+    </div>
+
+    <div class="col-3">
+        <img src="{% static './css/images/hiking.jpeg' %}">
+    </div>
+
+    <div class="col-3">
+        <img src="{% static './css/images/hipo.jpeg' %}">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        <img src="{% static './css/images/hotsprings.jpeg' %}">
+    </div>
+
+    <div class="col-3">
+        <img src="{% static './css/images/hotspri.jpeg' %}">
+    </div>
+
+    <div class="col-3">
+        <img src="{% static './css/images/lions.jpeg' %}">
+    </div>
+
+    <div class="col-3">
+        <img src="{% static './css/images/murchsion.jpeg' %}">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        <img src="{% static './css/images/park.jpeg' %}">
+    </div>
+
+    <div class="col-3">
+        <img src="{% static './css/images/rock mountain national.jpeg' %}">
+    </div>
+
+    <div class="col-3">
+        <img src="{% static './css/images/sipi.jpeg' %}">
+    </div>
+
+    <div class="col-3">
+        <img src="{% static './css/images/travel.jpeg' %}">
+    </div>
+</div>
+<!-- <div class="container">
+    <div class="gallery">
+        <img src="{% static './css/images/blossom.jpg' %}">
+
+        <img src="{% static './css/images/blue.jpg' %}">
+
+        <img src="{% static './css/images/contour.jpg' %}">
+
+        <img src="{% static './css/images/download.jpeg' %}">
+
+        <img src="{% static './css/images/download.jpg' %}">
+
+        <img src="{% static './css/images/flower.jpg' %}">
+
+        <img src="{% static './css/images/green.jpg' %}">
+
+        <img src="{% static './css/images/house.jpg' %}">
+
+        <img src="{% static './css/images/howdy.jpeg' %}">
+
+        <img src="{% static './css/images/landscape.jpg' %}">
+
+        <img src="{% static './css/images/mixture.jpg' %}">
+
+        <img src="{% static './css/images/twigs.jpg' %}">
+
+        <img src="{% static './css/images/nature.jpg' %}">
+
+        <img src="{% static './css/images/stoney.jpg' %}">
+
+        <img src="{% static './css/images/were.jpg' %}">
+
+        <img src="{% static './css/images/shadow.jpg' %}">
+
+        <img src="{% static './css/images/way.jpg' %}">
+
+        <img src="{% static './css/images/blue.jpg' %}">
+
+        <img src="{% static './css/images/green.jpg' %}">
+
+        <img src="{% static './css/images/tree.jpg' %}">
+    </div>
+</div> -->
+
+
 
 <!--================== Contact Section ===============================-->
 
 <div class="contact-title">
-    <h1>Say Hello</h1>
+    <!--<h1>Say Hello</h1>-->
     <h2>We are ready to serve you</h2>
 
 </div>
 <div class="contact-form">
-    <form id="contact-form" method="post" action="">
+    <form id="contact-form" method="post" action="/get_name/">
+        {% csrf_token %}
         <input type="text" name="name" class="form-control" placeholder="Your name" required>
 
         <input type="email" name="email" class="form-control" placeholder="Email" required>
+
+        <input type="text" name="subject" class="form-control" maxlength="255" required placeholder="subject">
 
         <textarea name="message" class="form-control" placeholder="message" rows="4" required></textarea>
 

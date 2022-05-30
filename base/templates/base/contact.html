@@ -20,26 +20,24 @@
 
     {% block content %}
     <div class="contact-title">
-        <h1>Say Hello</h1>
         <h2>We are ready to serve you</h2>
 
     </div>
     <div class="contact-form">
-        <form id="contact-form" method="post" action="">
-            <input type="text" name="name" class="form-control" placeholder="Your name" required>
+        <form id="contact-form" method="post" action="/get_name/">
+            {% csrf_token %}
+            <input type="text" name="name" class="form-control" placeholder="Your name" value="{{ current_name }}" required>
 
             <input type="email" name="email" class="form-control" placeholder="Email" required>
 
-            <textarea name="message" id="styled" class="form-control" placeholder="message" rows="4" required></textarea>
+            <input type="text" name="subject" class="form-control" maxlength="255" required placeholder="subject">
+
+            <textarea name="message" class="form-control" placeholder="message" rows="4" required></textarea>
 
             <input type="submit" class="form-control submit" value="SEND MESSAGE">
 
 
         </form>
-    </div>
-
-
-</body>
-{% endblock content %}
+        {% endblock %}
 
 </html>

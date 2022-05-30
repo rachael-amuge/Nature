@@ -1,23 +1,49 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.contrib.auth import authenticate
+from .forms import UserCreationForm,NameForm
 from .models import Contact
 
+
 # Create your views here.
+def contact(request):
+    
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password1']
+            user = authenticate(username=username,password=password)
+            
+            
+            
+            return 'Hello Smith'
+    else:
+        form = UserCreationForm()
+    return render(request, 'base/get_name.html',{'form':'form'})    
+
+
+
+def get_name(request):
+    if request.method == 'POST':
+        form = NameForm(request.POST)
+        if form.is_valid():
+            Form.save()
+            form = UserCreationForm()
+            return HttpResponseRedirect('/Thanks/')
+        
+    else:
+        form = NameForm()
+        
+    return render(request,'base/contact.html',{'form':form})    
+
+
 def home(request):
     return render(request,'base/home.html')
 
-def contact(request):
-    if request.method=="POST":
-        contact = Contact()
-        name = request.POST.get('name')
-        email= request.POST.get('email')
-        subject = request.POST.get('subject')
-        contact.name=name
-        contact.email=email
-        contact.subject=subject
-        contact.save()
-        return HttpResponse('<h1>Thanks for contacting us</h1>')
-    return render(request,'base/contact.html')
+
+
 
 def about(request):
     return render(request,'base/about.html')
